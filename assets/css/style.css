@@ -78,6 +78,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 0;
 }
 
+#header.header-scrolled .logo p,
+#header.header-scrolled .logo .social-links {
+  color: transparent;
+  display: none;
+
+}
+
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
@@ -88,7 +95,27 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   text-transform: uppercase;
 }
 
-#header .logo h1 a, #header .logo h1 a:hover {
+#header .logo h2 {
+  font-size: 28px;
+  margin: 0;
+  padding: 4px 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+#header .logo p {
+  margin: 0;
+  padding: 4px 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover,
+#header .logo h2 a, #header .logo h2 a:hover,
+#header .logo p, #header .logo p:hover
+{
   color: #fff;
   text-decoration: none;
 }
@@ -2264,6 +2291,21 @@ section {
 }
 
 #footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #1e4356;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.logo .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #1e4356;
